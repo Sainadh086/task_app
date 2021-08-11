@@ -24,7 +24,7 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - 
+       
       # Runs a command to install required packages
       - name: Install the  required packages
         run: pip install -r task_app/requirements.txt 
