@@ -12,6 +12,11 @@ notes = db['app']['notes']
 p_data = lambda x: request.form.get(x)
 
 
+
+
+
+
+
 @app.route("/", methods= ['GET', 'POST'])
 def index():
     if request.method == "POST":
