@@ -35,4 +35,8 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          python3 app.py
+          python3 app.py &
+          curl http://localhost:8080/
+          killall python3
+          
+          
